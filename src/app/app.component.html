@@ -52,30 +52,12 @@
       <div>Untapped:{{state.untappedSwamp}}</div>
     </div>
     <div class="container">
-      <img *ngFor="let coffer of state.totalCoffers" src="/assets/cabal-coffers.jpeg" alt="Cabal Coffers" class="card"
+      <img *ngFor="let coffer of state.totalCoffers" src="/cabal-coffers-tech/assets/cabal-coffers.jpeg" alt="Cabal Coffers" class="card"
         (click)="coffer.tapped = !coffer.tapped; calculate()" [ngClass]="{'tapped': coffer.tapped}">
     </div>
     <div class="container">
-      <img *ngFor="let coffer of state.totalSwamp" src="/assets/swamp.jpeg" alt="Cabal Coffers" class="card"
+      <img *ngFor="let coffer of state.totalSwamp" src="/cabal-coffers-tech/assets/swamp.jpeg" alt="Cabal Coffers" class="card"
         (click)="coffer.tapped = !coffer.tapped" [ngClass]="{'tapped': coffer.tapped}">
     </div>
   </div>
-  <!-- <div>
-    <span>
-      <button mat-icon-button (click)="processTappedCoffers(-1)" color="primary">
-        <mat-icon>chevron_left</mat-icon>
-      </button>
-      <span>{{state.tappedCoffers}}</span>
-      <button mat-icon-button (click)="processTappedCoffers(1)" color="primary">
-        <mat-icon>chevron_right</mat-icon>
-      </button>
-    </span>
-    <span>Tap Coffers</span>
-  </div>
-  <div>
-    <button (click)="calculate()" mat-button> Tap Coffer {{state.tappedCoffers}} </button>
-  </div> -->
-  <!-- <div>
-  <img src="/assets/cabal-coffers.jpeg" alt="Cabal Coffers" class="card" (click)="tapped = tapped ? false : true "
-    [ngClass]="{'tapped': tapped}"> -->
 </div>
