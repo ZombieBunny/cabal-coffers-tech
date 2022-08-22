@@ -1,0 +1,82 @@
+.tapped {
+  transform: rotate(90deg);
+  margin: 60px 10px !important;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.manaPool {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 10px;
+  background-color: #d3d3d3;
+  border: none;
+  background-image: url(./../assets/mtg-color.png);
+  background-repeat: no-repeat;
+}
+.black {
+  background-color: #ccc4c0;
+  background-position: -92px -59px;
+  background-size: 165px 105px;
+}
+
+.container {
+  height: 300px;
+  left: calc(50% - 300px);
+  display: flex;
+
+  .card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+
+  .card:not(:first-child) {
+    margin-left: -160px;
+  }
+  .tapped {
+    transform: rotate(90deg);
+    margin: 60px 10px !important;
+  }
+  .tapped:not(:first-child) {
+    margin: 60px 10px 60px -160px !important;
+  }
+  .card:hover {
+    cursor: pointer;
+  }
+}
